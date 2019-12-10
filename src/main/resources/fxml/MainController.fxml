@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="menu">
+        <menus>
+          <Menu fx:id="menuArchivo" mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem fx:id="itemNuevo" mnemonicParsing="false" text="Nuevo" />
+                  <MenuItem fx:id="itemAbrir" mnemonicParsing="false" text="Abrir..." />
+                  <MenuItem fx:id="itemGuardar" mnemonicParsing="false" text="Guardar" />
+                  <MenuItem fx:id="itemGuardarcomo" mnemonicParsing="false" text="Guardar como..." />
+                  <MenuItem fx:id="itemSalir" mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuAyuda" mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="itemAcerca" mnemonicParsing="false" text="Acerca de..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane fx:id="tabMain" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="475.0" prefHeight="475.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab fx:id="tabPersonal" text="Personal" />
+            <Tab fx:id="tabContacto" text="Contacto" />
+            <Tab fx:id="tabFormacion" text="Formación" />
+            <Tab fx:id="tabExperiencia" text="Experiencia" />
+            <Tab fx:id="tabConocimientos" text="Conocimientos" />
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

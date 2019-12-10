@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="root" maxHeight="600.0" maxWidth="1.7976931348623157E308" minHeight="350.0" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane collapsible="false" lineSpacing="1.0" minHeight="100.0" prefHeight="200.0" prefWidth="200.0" text="Teléfonos">
+         <content>
+            <HBox prefHeight="28.0" prefWidth="588.0">
+               <children>
+                  <TableView fx:id="tablaTelefonos" prefHeight="70.0" prefWidth="530.0">
+                    <columns>
+                      <TableColumn fx:id="columnNumero" prefWidth="130.0" text="Número" />
+                      <TableColumn fx:id="columnTipo" prefWidth="130.0" text="Tipo" />
+                    </columns>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </TableView>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#OnAñadirTelefono" prefWidth="59.0" text="Añadir">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#OnEliminarTelefono" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane collapsible="false" minHeight="100.0" prefHeight="200.0" prefWidth="200.0" text="Direcciones de correo">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tablaCorreo" prefHeight="70.0" prefWidth="530.0">
+                    <columns>
+                      <TableColumn fx:id="columnEmail" prefWidth="260.0" text="E-mail" />
+                    </columns>
+                  </TableView>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#OnAñadirCorreo" prefWidth="59.0" text="Añadir">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#OnEliminarCorreo" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane collapsible="false" minHeight="100.0" prefHeight="200.0" prefWidth="200.0" text="Webs">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tablaWebs" prefHeight="70.0" prefWidth="530.0">
+                    <columns>
+                      <TableColumn fx:id="columnURL" prefWidth="260.0" text="URL" />
+                    </columns>
+                  </TableView>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#OnAñadirWebs" prefWidth="59.0" text="Añadir">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#OnEliminarWebs" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TitledPane>
+   </children>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tablaConocimiento" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="390.0" prefWidth="505.0">
+         <columns>
+            <TableColumn fx:id="columnDenominacionCono" prefWidth="119.0" text="Denominación" />
+            <TableColumn fx:id="columnNivel" prefWidth="122.0" text="Nivel" />
+         </columns>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </TableView>
+      <VBox prefHeight="400.0" prefWidth="197.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#OnAñadirConocimiento" prefHeight="25.0" prefWidth="130.0" text="Añadir conocimiento">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OnAñadirIdioma" prefWidth="130.0" text="Añadir idioma">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="15.0" layoutY="50.0" mnemonicParsing="false" onAction="#OnEliminarConocimiento" prefWidth="130.0" text="Eliminar">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>
